@@ -11,27 +11,27 @@ import { useEffect, useRef } from "react";
 
 const testimonials = [
     {
-        label: "We appreciate Eoxys technical team’s effort for developing team worked and delivered well what they have committed...",
+        label: "Eoxys’ s TuneApp server is user-friendly tool as a plug and play type of software to build the executable process blocks.Our Support team is happy to integrate with our banking customer for timely alerts from deployed sensor events across the connected systems",
         imgPath: "/images/testimonials/testimonial_icon1.png",
         footer: "By Major Indian Industrial Pipeline Manufacturer",
     },
     {
-        label: "We appreciate Eoxys XENO+ WiFi+BLE nano module, an elegant device with technology compactness...",
+        label: "Great time with Eoxys team for developing our AIML – Audio and Image classification device for pest sensing and classification requirements.Their technical excellency is good to explore the new possible solutions to meet the timeline for go to market",
         imgPath: "/images/testimonials/testimonial_icon1.png",
         footer: "By Reputed Engineering University",
     },
     {
-        label: "Eoxys’ TuneApp server is a user-friendly tool as a plug-and-play type of software to build executable process blocks...",
+        label: "Awesome Eoxys team for timely delivery of ECU unit and the device is working as expected. We are satisfied with your delivery and support tasks",
         imgPath: "/images/testimonials/testimonial_icon1.png",
         footer: "By Major Japanese MNC Company",
     },
     {
-        label: "Great time with Eoxys team for developing our AIML – Audio and Image classification device for pest sensing...",
+        label: "We appreciate Eoxys technical team’s effort for developing  team worked and delivered well what they have committed at the initiation of the project,            like project technical approach, milestone deliverables, quality aspects and complete project deliverables, also their support during the field test of the devices",
         imgPath: "/images/testimonials/testimonial_icon1.png",
         footer: "By Major German MNC Company",
     },
     {
-        label: "Awesome Eoxys team for timely delivery of ECU unit and the device is working as expected...",
+        label: "We appreciate Eoxys XENO+ WiFi+BLE nano module, an elegant device with technology compactness. Our college students used XENO+ nano module for their real time IoT application projects with no time. Good work Eoxys Technical XENO+ team for this outstanding product",
         imgPath: "/images/testimonials/testimonial_icon1.png",
         footer: "By Major Indian Automotive OEM",
     },
@@ -50,7 +50,6 @@ export default function Testimonials() {
             );
         }
     }, []);
-    
 
     return (
         <Box
@@ -105,7 +104,7 @@ export default function Testimonials() {
                             display: "flex",
                             justifyContent: "center",
                             alignItems: "center",
-                            minHeight: "auto", // Dynamically adjusts height
+                            height: "auto", // Dynamically adjusts height
                             overflow: "visible",
                         }}
                     >
@@ -114,21 +113,23 @@ export default function Testimonials() {
                             sx={{
                                 width: "100%",
                                 maxWidth: 400,
-                                minHeight: 400, // Ensure cards have enough space
+                                height: 500, // Fixed height for all cards
                                 p: { xs: 3, md: 4 },
                                 textAlign: "center",
                                 display: "flex",
                                 flexDirection: "column",
-                                justifyContent: "center",
+                                justifyContent: "space-between", // Distribute space evenly
                                 alignItems: "center",
-                                borderRadius: 6,
-                                overflow: "visible", // Prevent content cutoff
+                                borderRadius: 8,
+                                overflow: "visible", // Allow content to overflow if needed
                                 transition: "transform 0.3s ease, box-shadow 0.3s ease",
                                 "&:hover": {
                                     transform: "scale(1.05)",
                                     boxShadow: "0px 10px 20px rgba(0,0,0,0.2)",
                                 },
                                 mx: "auto",
+                                mb: 3, 
+                                mt: 3, 
                             }}
                         >
                             <Image src={item.imgPath} alt="Testimonial" width={80} height={80} />
